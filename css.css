@@ -63,6 +63,14 @@
   flex-direction: column;
 }
  
+  ul.products li {
+    width: 200px;
+    display: inline-block;
+    vertical-align: top;
+    *display: inline;
+    *zoom: 1;
+}  
+  
     //COLLECTION PAGE//
     
 a {
