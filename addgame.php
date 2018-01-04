@@ -7,18 +7,27 @@
 <?php echo '<p>Connecting To IMDB Database in PHP</p>'; 
 require_once("common.php");
 
-$given=$_POST["given"];
-$surname=$_POST["surname"];
-$gender=$_POST["gender"];
-print "<h3>IMDB Add Actor $given $surname ($gender)</h3>";
+$title=$_POST["title"];
+$publisher=$_POST["publisher"];
+$cavailable=$_POST["cavailable"];
+$releasedate=$_POST["release"];
+$console=$_POST["console"];
+$esrb=$_POST["esrb"];
+  
+  
+print "<h3>IMDB Add New Game</h3>";
 try {
-  $sql=    "INSERT into actors(first_name, last_name, gender) values (:given, :surname, :gender ); ";
+  $sql=    "INSERT into Collection(title, publisher, copies_available, release_date, console, esrb_rating) values (:title, :publisher, :cavailable, :release, :console, :esrb ); ";
+  
   $q=$db->prepare($sql);
-  $q->bindParam(':given',$given);
-  $q->bindParam(':surname',$surname);
-  $q->bindParam(':gender',$gender);
+  $q->bindParam(':title',$title);
+  $q->bindParam(':publisher',$publisher);
+  $q->bindParam(':cavailable',$cavaiable);
+  $q->bindParam(':release',$releasedate);
+  $q->bindParam(':console',$console);
+  $q->bindParam(':esrb',$esrb);
   $count=$q->execute();
-  print $count." actor record added.";
+  print $count." record added.";
 } catch (PDOException $ex) {
     print "<p>Sorry, a database error occurred. Please try again later.</p>";
     print "Error details: ".$ex->getMessage()."<br />";
