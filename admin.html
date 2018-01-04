@@ -41,16 +41,22 @@
     </form>
     <body>
         
-  <form action="chgnbrfilms.php" method="POST">
+  <form action="changegame.php" method="POST">
     <fieldset>    
-    <legend>Change Availability</legend>
-    Given Name:
-    <input type="text" id="gn" name="given" placeholder="First Name"><br>
-    Last Name:
-    <input type="text" id="sn" name="surname" placeholder="Last Name"><br>
-    <input type="button" value="Get Film Count" onclick="showFilms()"><br>
-    Film Count:
-    <input type="text" id="nbrfilms" name="fcount"><br>
+    <legend>Change a Game Record</legend>
+    Title:
+    <input type="text" id="tl" name="title" placeholder="Game Title"><br>
+    Publisher:
+    <input type="text" id="pb" name="publisher" placeholder="Atari"><br>
+    Release Date:
+    <input type="text" id="rd" name="rdate" placeholder="01/01/2000"><br>
+    Console:
+    <input type="text" id="cs" name="console" placeholder="Genesis"><br>
+    Esrb Rating:
+    <input type="text" id="es" name="esrb" placeholder="Mature"><br>
+    Copies Avaiable:
+    <input type="text" id="ca" name="cavaial" placeholder="27"><br>
+        
     <input type="submit" value="Change Game">
     </fieldset>
     </form>
