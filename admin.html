@@ -1,0 +1,60 @@
+#!/usr/local/bin/php
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <meta charset="UTF-8">
+    <title>Sega Genesis | Gaming in the 1990s</title>
+</head>
+<body>
+<header>
+    <img src="Images/sitelogo.PNG" alt="gaming in the 90s"/>
+    <br/>
+</header>
+<nav align="right">
+    <a href="home.html">Home</a> |
+    <a href="snes.html" class="sneslink">Super Nintendo</a> |
+    <a href="genesis.html" class="genesislink">Sega Genesis</a> |
+    <a href="3dgaming.html">3D Gaming</a> |
+    <a href="controversy.html">Controversy</a> |
+    <a href="collection.html">Games</a> |
+    
+</nav>
+
+
+<body>
+
+    <form action="addactor.php" method="POST">
+      <fieldset>    
+       <legend>Add A Game</legend>
+       Given Name:<input type="text" name="given" placeholder="First Name"><br>
+       Last Name:<input type="text" name="surname" placeholder="Last Name"><br>
+       Gender:
+           <label> <input type="radio" name="gender" value="M"> Male  </label> 
+           <label> <input type="radio" name="gender" value="F"> Female  </label> 
+       <br>
+       <input type="submit" value="Add Actor">
+      </fieldset>
+    </form>
+    <body>
+        
+  <form action="chgnbrfilms.php" method="POST">
+    <fieldset>    
+    <legend>Change Availability</legend>
+    Given Name:
+    <input type="text" id="gn" name="given" placeholder="First Name"><br>
+    Last Name:
+    <input type="text" id="sn" name="surname" placeholder="Last Name"><br>
+    <input type="button" value="Get Film Count" onclick="showFilms()"><br>
+    Film Count:
+    <input type="text" id="nbrfilms" name="fcount"><br>
+    <input type="submit" value="Change Film Count">
+    </fieldset>
+    </form>
+
+
+
+</body>
+  
+
+</body>
+</html>
