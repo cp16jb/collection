@@ -15,7 +15,7 @@ $cs=$_POST["console"];
 $es=$_POST["esrb"];
 print "<h3>IMDB Change Game </h3>";
 try {
-  $sql=    "UPDATE Collection SET copies_available= :ca WHERE title=:tl and publisher=:pb and copies_avaiable=:ca and release_date=:rd and console=:cs and esrb_rating=:es";
+  $sql=    "UPDATE Collection SET copies_available= :ca WHERE title=:tl and publisher=:pb and release_date=:rd and console=:cs and esrb_rating=:es";
   
   $q=$db->prepare($sql);
   $q->bindParam(':tl',$tl);
