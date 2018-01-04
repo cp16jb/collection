@@ -17,6 +17,19 @@ print "<h3>IMDB Change Game </h3>";
 try {
   $sql=    "UPDATE Collection SET copies_available= :ca WHERE title=:tl and publisher=:pb and release_date=:rd and console=:cs and esrb_rating=:es";
   
+   $sql=    "UPDATE Collection SET title= :tl WHERE publisher=:pb and release_date=:rd and console=:cs and esrb_rating=:es and copies_available= :ca";
+  
+    $sql=    "UPDATE Collection SET publisher= :pb WHERE title=:tl and release_date=:rd and console=:cs and esrb_rating=:es and copies_available= :ca";
+  
+      $sql=    "UPDATE Collection SET cavail= :cs WHERE title=:tl and publisher=:pb and release_date=:rd and console=:cs and esrb_rating=:es";
+  
+        $sql=    "UPDATE Collection SET rdate= :rd WHERE title=:tl and publisher=:pb and console=:cs and esrb_rating=:es and copies_available= :ca";
+  
+         $sql=    "UPDATE Collection SET console= :cs WHERE title=:tl and publisher=:pb and release_date=:rd and esrb_rating=:es and copies_available= :ca" ;
+  
+        $sql=    "UPDATE Collection SET esbr= :es WHERE title=:tl and publisher=:pb and release_date=:rd  and console=:cs and copies_available= :ca" ;
+  
+  
   $q=$db->prepare($sql);
   $q->bindParam(':tl',$tl);
   $q->bindParam(':pb',$pb);
