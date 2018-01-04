@@ -23,16 +23,20 @@
 
 <body>
 
-    <form action="addactor.php" method="POST">
+    <form action="addgame.php" method="POST">
       <fieldset>    
        <legend>Add A Game</legend>
-       Given Name:<input type="text" name="given" placeholder="First Name"><br>
-       Last Name:<input type="text" name="surname" placeholder="Last Name"><br>
-       Gender:
-           <label> <input type="radio" name="gender" value="M"> Male  </label> 
-           <label> <input type="radio" name="gender" value="F"> Female  </label> 
+       Title:<input type="text" name="title" placeholder="Name of Game"><br>
+       Publisher:<input type="text" name="publisher" placeholder="Game Makers"><br>
+       ESRB Rating:
+           <label> <input type="radio" name="esrb" value="M"> Mature  </label> 
+           <label> <input type="radio" name="esrb" value="T"> Teen  </label> 
+          <label> <input type="radio" name="esrb" value="E"> Everyone  </label>
        <br>
-       <input type="submit" value="Add Actor">
+           Release Date:<input type="text" name="release" placeholder="Releaseed On"><br>
+           Publisher:<input type="text" name="console" placeholder="Playable On"><br>
+           Publisher:<input type="text" name="cavailable" placeholder="Ready to Rent"><br>
+       <input type="submit" value="Add Game">
       </fieldset>
     </form>
     <body>
@@ -47,7 +51,7 @@
     <input type="button" value="Get Film Count" onclick="showFilms()"><br>
     Film Count:
     <input type="text" id="nbrfilms" name="fcount"><br>
-    <input type="submit" value="Change Film Count">
+    <input type="submit" value="Change Game">
     </fieldset>
     </form>
 
