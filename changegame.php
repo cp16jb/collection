@@ -21,13 +21,13 @@ try {
   
     $sql=    "UPDATE Collection SET publisher= :pb WHERE title=:tl and release_date=:rd and console=:cs and esrb_rating=:es and copies_available= :ca";
   
-      $sql=    "UPDATE Collection SET cavail= :cs WHERE title=:tl and publisher=:pb and release_date=:rd and console=:cs and esrb_rating=:es";
+      $sql=    "UPDATE Collection SET copies_available= :cs WHERE title=:tl and publisher=:pb and release_date=:rd and console=:cs and esrb_rating=:es";
   
-        $sql=    "UPDATE Collection SET rdate= :rd WHERE title=:tl and publisher=:pb and console=:cs and esrb_rating=:es and copies_available= :ca";
+        $sql=    "UPDATE Collection SET release_date= :rd WHERE title=:tl and publisher=:pb and console=:cs and esrb_rating=:es and copies_available= :ca";
   
          $sql=    "UPDATE Collection SET console= :cs WHERE title=:tl and publisher=:pb and release_date=:rd and esrb_rating=:es and copies_available= :ca" ;
   
-        $sql=    "UPDATE Collection SET esbr= :es WHERE title=:tl and publisher=:pb and release_date=:rd  and console=:cs and copies_available= :ca" ;
+        $sql=    "UPDATE Collection SET esrb_rating= :es WHERE title=:tl and publisher=:pb and release_date=:rd  and console=:cs and copies_available= :ca" ;
   
   
   $q=$db->prepare($sql);
