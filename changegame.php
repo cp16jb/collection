@@ -7,16 +7,24 @@
 <?php echo '<p>Connecting To IMDB Database in PHP</p>'; 
 require_once("common.php");
 
-$gn=$_POST["given"];
-$sn=$_POST["surname"];
-$fc=$_POST["fcount"];
-print "<h3>IMDB Change Actor $gn $sn ($fc)</h3>";
+$tl=$_POST["title"];
+$pb=$_POST["publisher"];
+$ca=$_POST["cavail"];
+$rd=$_POST["rdate"];
+$cs=$_POST["console"];
+$es=$_POST["esrb"];
+print "<h3>IMDB Change Game </h3>";
 try {
-  $sql=    "UPDATE actors SET film_count= :fc WHERE first_name=:gn and last_name=:sn";
+  $sql=    "UPDATE Collection SET copies_available= :ca WHERE title=:tl and publisher=:pb and copies_avaiable=:ca and release_date=:rd and console=:cs and esrb_rating=:es";
+  
   $q=$db->prepare($sql);
-  $q->bindParam(':gn',$gn);
-  $q->bindParam(':sn',$sn);
-  $q->bindParam(':fc',$fc);
+  $q->bindParam(':tl',$tl);
+  $q->bindParam(':pb',$pb);
+  $q->bindParam(':ca',$ca);
+  $q->bindParam(':rd',$rd);
+  $q->bindParam(':cs',$cs);
+  $q->bindParam(':es',$es);
+  
   $q->execute();
 } catch (PDOException $ex) {
     print "<p>Sorry, a database error occurred. Please try again later.</p>";
