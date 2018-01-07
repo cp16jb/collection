@@ -18,7 +18,7 @@
     background-color: white;
     position: -webkit-sticky;
     position: sticky;
-    color: black; 
+    color: black;
     border: 5px solid #008CBA;
     padding: 30px 400px;
     text-align: center;
@@ -36,41 +36,41 @@
     background-color: #008CBA;
     color: white;
 //BUTTONS//
-    
-    //COLLECTION PAGE//
-    
- .product-filter {
-  display: flex;
+
+//COLLECTION PAGE//
+
+.product-filter {
+    display: flex;
 }
- .product-filter h1 {
-  flex-grow: 1;
+.product-filter h1 {
+    flex-grow: 1;
 }
- 
- .sort {
-  display: flex;
+
+.sort {
+    display: flex;
 }
- 
- .collection-sort {
-  display: flex;
-  flex-direction: column;
+
+.collection-sort {
+    display: flex;
+    flex-direction: column;
 }
- 
-  ul.products li {
+
+ul.products li {
     width: 200px;
     display: inline-block;
     vertical-align: top;
     display: inline;
     zoom: 1;
-}  
-  
-    //COLLECTION PAGE//
-    
+}
+
+//COLLECTION PAGE//
+
 a {
     text-decoration: none;
 }
 
 a:link {
-    color:black;
+    color:#1f1f1f;
 }
 
 a:visited {
@@ -82,21 +82,22 @@ a:hover {
     color: blue;
 }
 
-a:hover.sneslink {
-    color: darkviolet;
+h2.collection_description {
+    margin-left: 200px;
+    margin-right: 200px;
 }
 
-a:hover.genesislink {
-    color: red;
+p.homeDescription {
+    margin-left: 200px;
+    margin-right: 200px;
 }
 
 body {
-
     font-family: "Calibri", SansSerif;
     font-size: 105%;
     margin-left: 200px;
     margin-right: 200px;
-    position: relative;
+    background-image: url("Images/jazz_pattern_tl.png");
 }
 
 header {
@@ -113,4 +114,8 @@ nav {
 table#nextLevel tr {
     font-family: "Copperplate Gothic Light", SansSerif;
     font-size: 150%;
+}
+
+footer {
+    font-size: 75%;
 }
