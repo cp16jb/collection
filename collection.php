@@ -23,7 +23,7 @@ if (!$query) {
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" type="text/css" href="css.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="UTF-8">
     <title>Collection | Gaming in the 90s Store</title>
 </head>
