@@ -82,7 +82,16 @@ a:hover {
     color: blue;
 }
 
+a:hover.sneslink {
+    color: darkviolet;
+}
+
+a:hover.genesislink {
+    color: red;
+}
+
 body {
+
     font-family: "Calibri", SansSerif;
     font-size: 105%;
     margin-left: 200px;
