@@ -1,3 +1,12 @@
+#forms {
+    border-radius: 25px;
+    background: 33ACFF;
+    color: FFFFFF; 
+    padding: 20px; 
+    width: 200px;
+    height: 150px; 
+}
+
 a {
     text-decoration: none;
 }
