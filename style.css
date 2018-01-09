@@ -1,31 +1,39 @@
-#forms {
-    border-radius: 25px;
-    background: #33ACFF;
-    padding: 20px; 
-    width: 800px;
-    height: 200px; 
-}
+/*
+Name: Cole Perry & Heshan Modaragamage
+Date: January 9th, 2017
+Course: COSC 2P89
+Final Project "The Collector"
+*/
 
 a {
     text-decoration: none;
 }
 
+a.ul {
+    text-decoration: underline;
+}
+
 a:link {
-    color:#1f1f1f;
+    color: #1f1f1f;
 }
 
 a:visited {
-    color: black;
+    color: #1f1f1f;
 }
 
-a:hover {
-    text-decoration: underline;
-    color: blue;
+a:hover {;
+    color: #FF00CD;
 }
 
 h2.collection_description {
     margin-left: 200px;
     margin-right: 200px;
+}
+
+h3 {
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: center;
 }
 
 p.homeDescription {
@@ -52,11 +60,57 @@ nav {
     bottom: 80px;
 }
 
-table#nextLevel tr {
-    font-family: "Copperplate Gothic Light", SansSerif;
-    font-size: 150%;
-}
-
 footer {
     font-size: 75%;
+}
+
+/* Collection Table */
+.collection-table {
+    border-collapse: collapse;
+    font-size: 20px;
+    min-width: 500px;
+    background-color: #f4fbff;
+}
+
+.collection-table th,
+.collection-table td {
+    border: 1px solid #1f1f1f;
+    padding: 7px 10px;
+    align-items: center;
+}
+
+/* Table Header */
+.collection-table thead th {
+    background-color: #508abb;
+    color: #FFFFFF;
+    border-color: #6ea1cc !important;
+    text-transform: uppercase;
+}
+
+/* Table Body */
+.collection-table tbody td {
+    color: #353535;
+    text-align: left;
+}
+
+/* Box Art Column */
+img.box-art {
+    max-height: 219px;
+    max-width: 219px;
+    border: 1px solid #1f1f1f;
+    display: block;
+    margin: auto;
+}
+
+/* Info Column */
+tr.collection-info {
+    font-size: 105%;
+    padding-left: 10px;
+    text-align: left;
+}
+
+form {
+    border: 1px solid #1f1f1f;
+    max-width:300px;
+    padding: 10px 10px 10px 10px;
 }
